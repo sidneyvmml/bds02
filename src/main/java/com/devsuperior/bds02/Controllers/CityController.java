@@ -32,22 +32,6 @@ public class CityController {
 	public ResponseEntity<CityDTO> delete(@PathVariable Long id) {
 		service.delete(id);	
 		return ResponseEntity.noContent().build();
-	}
-
-//	@GetMapping(value = "/{id}")
-//	public ResponseEntity<CityDTO> findById(@PathVariable Long id) {
-//		CityDTO dto = service.findById(id);
-//		return ResponseEntity.ok().body(dto);
-//	}
-
-//	@PostMapping
-//	public ResponseEntity<CityDTO> insert(@RequestBody CityDTO dto) {
-//		dto = service.insert(dto);
-//		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-//				.buildAndExpand(dto.getId()).toUri();
-//		return ResponseEntity.created(uri).body(dto);
-//	}
-	
-	
+	}	
 
 }
